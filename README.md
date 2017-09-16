@@ -27,12 +27,14 @@ java -Dconversions.file=src/main/resources/conversions.txt -Drates.file=src/main
 
 # Configuration
 You can change the default behaviour of FxCalc using the following System Properties:
+
 | System Property name | Description |
 | ------ | ------ |
 | rates.file | location of conversion rates file, containing eg: AUD/USD=0.8371|
 | conversions.file | stores conversion methods, eg: AUD/USD=D (Direct lookup) |
 | rounding.mode | java.Math.util.RoundingMode (default HALF_UP) |
-Specify the above using eg: 
+
+To specify any of the above properties, try:
 ```sh
 java -D rates.file=/path/to/rates.txt
 ```
