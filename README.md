@@ -7,7 +7,7 @@ Extract the zipped Eclipse project to a directory.
 # Usage
 The FxCalc application is an executable JAR file. To run the program directly, type:
 ```sh
-java -jar fxcalc.jar [-Doptions] {Currency} {amount} in {Currency}
+java -jar fxcalc.jar [-Doptions] {base} {amount} in {target}
 ``` 
 Where:
 - -Doptions is an optional setting - see Configuration below
