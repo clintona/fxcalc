@@ -68,7 +68,7 @@ public class CurrencyConverter {
 
     /**
      * Convert the baseCurrency amount to the targetCurrency,
-     * without rounding (which introduces errors).
+     * without rounding (as rounding introduces errors).
      * Uses the built-in decimal precision of the ISO 4217 java.util.Currency class.
      * 
      * @param baseCurrency

@@ -27,21 +27,21 @@ public class ConversionMap {
      * @param conversion the target Conversion
      */
     public void add(Conversion conversion) {
-        // fetch or create the List of Conversions for this Currency
-        Set<Conversion> conversionList = conversionMap.get(conversion.base);
-        if (conversionList == null) {
-            conversionList = new HashSet<Conversion>();
+        // fetch or create the Set of Conversions for this Currency
+        Set<Conversion> conversionSet = conversionMap.get(conversion.base);
+        if (conversionSet == null) {
+            conversionSet = new HashSet<Conversion>();
         }
 
-        conversionList.add(conversion); // ignores duplicates
-        conversionMap.put(conversion.base, conversionList);
+        conversionSet.add(conversion); // ignores duplicates
+        conversionMap.put(conversion.base, conversionSet);
     }
 
     /**
-     * Return the List of Currency Conversions for this Currency, else an empty List.
+     * Return the Set of Currency Conversions for this Currency, else an empty Set.
      * 
      * @param key Currency to convert
-     * @return the List of Currency Conversions for this Currency, else an empty List.
+     * @return the Set of Currency Conversions for this Currency, else an empty Set.
      */
     public Set<Conversion> getConversions(Currency key) {
         Set<Conversion> conversions = this.conversionMap.get(key);
