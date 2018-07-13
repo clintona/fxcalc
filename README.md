@@ -67,4 +67,4 @@ Where:
 
 - Defaults Rounding to HALF_UP. Rounding only occurs on final output, to eliminate rounding error. BigDecimal is used to avoid inexact floating point calculation errors.
 
-- designed for simplicity. No external libraries required. High code coverage. 
+- designed for simplicity. No external libraries required (except junit). High code coverage. 
